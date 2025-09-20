@@ -1,7 +1,6 @@
 import { defineConfig } from "drizzle-kit";
 
-// Fixed for drizzle-kit v0.20.18 compatibility
-
+// Working configuration for drizzle-kit v0.20.18
 export default defineConfig({
   schema: "./src/db/schema.ts",
   out: "./drizzle",
@@ -12,4 +11,3 @@ export default defineConfig({
       "postgresql://user:password@localhost:5432/ai_custdev",
   },
 });
-
