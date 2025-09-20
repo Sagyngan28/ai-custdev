@@ -10,3 +10,4 @@ export default defineConfig({
       "postgresql://user:password@localhost:5432/ai_custdev",
   },
 });
+
