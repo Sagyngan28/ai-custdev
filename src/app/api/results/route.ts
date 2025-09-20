@@ -2,6 +2,9 @@ import { NextResponse } from "next/server";
 import { db } from "@/db/client";
 import { generateInsights } from "@/lib/glm";
 
+// Force dynamic rendering for this route
+export const dynamic = 'force-dynamic';
+
 export async function GET(req: Request) {
   try {
     const { searchParams } = new URL(req.url);
